@@ -19,8 +19,8 @@ pytest
 
 ## Docker
 ```bash
-docker build -t vertex-api .
-docker run -p 8000:8000 vertex-api
+docker build -t vert-api .
+docker run -p 8000:8000 vert-api
 ```
 
 ## Kubernetes
