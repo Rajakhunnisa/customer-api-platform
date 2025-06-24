@@ -19,8 +19,8 @@ pytest
 
 ## Docker
 ```bash
-docker build -t vert-api .
-docker run -p 8000:8000 vert-api
+docker build -t demo-api .
+docker run -p 8000:8000 demo-api
 ```
 
 ## Kubernetes
