@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vertex-api
+  name: vert-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vertex-api
+      app: vert-api
   template:
     metadata:
       labels:
-        app: vertex-api
+        app: vert-api
     spec:
       containers:
-      - name: vertex-api
-        image: vertex-api:latest
+      - name: vert-api
+        image: vert-api:latest
         ports:
         - containerPort: 8000
