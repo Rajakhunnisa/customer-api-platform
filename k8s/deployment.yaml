@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vert-api
+  name: demo-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vert-api
+      app: demo-api
   template:
     metadata:
       labels:
-        app: vert-api
+        app: demo-api
     spec:
       containers:
-      - name: vert-api
-        image: vert-api:latest
+      - name: demo-api
+        image: demo-api:latest
         ports:
         - containerPort: 8000
